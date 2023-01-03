@@ -30,7 +30,7 @@ namespace SimsigImporterLib.Models
         /// <summary>
         /// Gets the code of the train that relates to this specific activity
         /// </summary>
-        public string AssociatedTrain { get; set; }
+        public string AssociatedUID { get; set; }
 
         /// <summary>
         /// Gets or sets the duration of the activity in seconds

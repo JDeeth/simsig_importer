@@ -590,35 +590,35 @@ namespace SimsigImporterLib
             {
                 if ( act.StartsWith("N:"))
                 {
-                    activites.Add(new Activity { ActivityCode = (int)Activities.Next, AssociatedTrain = act.Split(':')[1] });
+                    activites.Add(new Activity { ActivityCode = (int)Activities.Next, AssociatedUID = act.Split(':')[1] });
                 }
                 else if (act.StartsWith("J:"))
                 {
-                    activites.Add(new Activity { ActivityCode = (int)Activities.Join, AssociatedTrain = act.Split(':')[1] });
+                    activites.Add(new Activity { ActivityCode = (int)Activities.Join, AssociatedUID = act.Split(':')[1] });
                 }
                 else if (act.StartsWith("DNR:"))
                 {
-                    activites.Add(new Activity { ActivityCode = (int)Activities.DividesNewRear, AssociatedTrain = act.Split(':')[1] });
+                    activites.Add(new Activity { ActivityCode = (int)Activities.DividesNewRear, AssociatedUID = act.Split(':')[1] });
                 }
                 else if (act.StartsWith("DNF:"))
                 {
-                    activites.Add(new Activity { ActivityCode = (int)Activities.DividesNewFront, AssociatedTrain = act.Split(':')[1] });
+                    activites.Add(new Activity { ActivityCode = (int)Activities.DividesNewFront, AssociatedUID = act.Split(':')[1] });
                 }
                 else if (act.StartsWith("DER:"))
                 {
-                    activites.Add(new Activity { ActivityCode = (int)Activities.DetachEngineRear, AssociatedTrain = act.Split(':')[1] });
+                    activites.Add(new Activity { ActivityCode = (int)Activities.DetachEngineRear, AssociatedUID = act.Split(':')[1] });
                 }
                 else if (act.StartsWith("DEF:"))
                 {
-                    activites.Add(new Activity { ActivityCode = (int)Activities.DetachEngineFront, AssociatedTrain = act.Split(':')[1] });
+                    activites.Add(new Activity { ActivityCode = (int)Activities.DetachEngineFront, AssociatedUID = act.Split(':')[1] });
                 }
                 else if (act.StartsWith("DCR:"))
                 {
-                    activites.Add(new Activity { ActivityCode = (int)Activities.DropCoachesRear, AssociatedTrain = act.Split(':')[1] });
+                    activites.Add(new Activity { ActivityCode = (int)Activities.DropCoachesRear, AssociatedUID = act.Split(':')[1] });
                 }
                 else if (act.StartsWith("DCF:"))
                 {
-                    activites.Add(new Activity { ActivityCode = (int)Activities.DropCoachesFront, AssociatedTrain = act.Split(':')[1] });
+                    activites.Add(new Activity { ActivityCode = (int)Activities.DropCoachesFront, AssociatedUID = act.Split(':')[1] });
                 }
                 else if ( !Regex.IsMatch(act, "^[0-9]{2}:?[0-9]{2}H?$"))
                 {
